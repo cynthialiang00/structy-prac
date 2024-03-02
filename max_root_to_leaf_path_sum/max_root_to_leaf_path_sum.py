@@ -1,5 +1,3 @@
-class Node:
-  def __init__(self, val):
     self.val = val
     self.left = None
     self.right = None
@@ -24,15 +22,14 @@ def max_path_sum(root):
   max_sum = traverse_sum(root)
   return max_sum
     
+a = Node(42)
+b.right = e
 ​
+max_path_sum(a)
     
-a = Node(3)
-b = Node(11)
-c = Node(4)
-d = Node(4)
-e = Node(-2)
-f = Node(1)
+    
+    
+      
+  
+  
 ​
-a.left = b
-a.right = c
-    
