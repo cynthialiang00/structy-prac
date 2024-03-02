@@ -24,22 +24,21 @@ def max_path_sum(root):
   max_sum = traverse_sum(root)
   return max_sum
     
-a = Node(-1)
-b = Node(-6)
-c = Node(-5)
-d = Node(-3)
-e = Node(0)
-f = Node(-13)
-g = Node(-1)
-h = Node(-2)
+a = Node(5)
+b = Node(11)
+c = Node(54)
+d = Node(20)
+e = Node(15)
+f = Node(1)
+g = Node(3)
 ​
 a.left = b
 a.right = c
 b.left = d
 b.right = e
-c.right = f
-e.left = g
-f.right = h
+e.left = f
+e.right = g
+b.right = e
 ​
 max_path_sum(a)
     
@@ -49,4 +48,3 @@ max_path_sum(a)
   
   
 ​
-b.right = e
