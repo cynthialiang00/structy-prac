@@ -19,6 +19,7 @@ def max_path_sum(root):
     left_sum = traverse_sum(root.left)
     right_sum = traverse_sum(root.right)
     
+    print(root.val + max(left_sum, right_sum))
     return root.val + max(left_sum, right_sum)
 ​
   max_sum = traverse_sum(root)
@@ -35,16 +36,4 @@ g = Node(3)
 a.left = b
 a.right = c
 b.left = d
-b.right = e
-e.left = f
-e.right = g
-b.right = e
-​
-max_path_sum(a)
-    
-    
-    
-      
-  
-  
-​
+a.right = c
